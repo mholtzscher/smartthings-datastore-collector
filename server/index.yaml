@@ -1,0 +1,9 @@
+indexes:
+
+- kind: Event
+  ancestor: no
+  properties:
+  - name: deviceId
+  - name: name
+  - name: date
+    direction: asc

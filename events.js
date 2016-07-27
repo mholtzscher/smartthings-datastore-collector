@@ -1,12 +1,13 @@
 'use strict';
-var projectId = process.env.PROJECT_ID;
+var projectId = process.env.GOOGLE_PROJECT_ID;
+projectId = 'fire-things';
 
 if (!projectId) {
-    var MISSING_PROJECT_ID = [
+    var MISSING_GOOGLE_PROJECT_ID = [
         'Cannot find your project ID for Google Cloud project. Please set an environment variable named ',
-        '"PROJECT_ID", holding the ID of your project.'
+        '"GOOGLE_PROJECT_ID", holding the ID of your project.'
     ].join('');
-    throw new Error(MISSING_PROJECT_ID);
+    throw new Error(MISSING_GOOGLE_PROJECT_ID);
 }
 
 var gcloud = require('gcloud')({

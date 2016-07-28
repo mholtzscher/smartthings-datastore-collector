@@ -126,7 +126,7 @@ def eventHandler(evt) {
     def params = [
         uri: "${collector_host}",
         body: json,
-        headers: ["X-API-KEY": "${collector_key}"]
+        headers: ["API_KEY": "${collector_key}"]
     ]
     try {
         httpPostJson(params)

@@ -1,11 +1,13 @@
 # SmartThings Datastore Collector
-NodeJS service and SmartThings SmartApp to collect events from SmartThings hub and store in Google Cloud Datastore for later data mining.
+NodeJS service and SmartThings SmartApp to collect events from SmartThings home automation hub and store in Google Cloud Datastore.
 
-## Setup
+## Setup and Prerequisites
 1. Fork this repo and clone to local machine.
+2. Need a Google account to use to setup Google Cloud account.
+3. Need a Heroku account to host service.
 
 ### Google Cloud
-1. Create a project on Google Cloud Console. You'll need to enable billing on the project in order to use Datastore(???).
+1. Create a project on Google Cloud Console. You'll need to enable billing on the project in order to use Datastore. Note: Based on current pricing quotas for Google Datastore there most likely be any charges since Smartthings typically doesn't generate very many events per day. Your usage may vary though! Be sure to monitor your API usage on the Google Cloud Dashboard for your project!
 2. Create a [Google Cloud Service Account](https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#createcutomserviceaccount). This is needed to have the NodeJS service be able to authenticate.
 3. Download json of service account after creation of account. 
 4. Rename file to credentials.json and place in root directory of project.

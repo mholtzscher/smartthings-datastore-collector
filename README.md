@@ -16,6 +16,7 @@ NodeJS service and SmartThings SmartApp to collect events from SmartThings hub a
 
 ### Configuration
 You will need to set a few environment variables in Heroku. For details on setting [environment variables in Heroku](https://devcenter.heroku.com/articles/config-vars)
+
 1. GOOGLE_PROJECT_ID = this is your google cloud project id. Ex: my-project-13456
 2. API_KEY = this is a user defined api key so you can generate it yourself. this key helps protect bots from pushing data into your datastore.
 
